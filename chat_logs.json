@@ -1,0 +1,12 @@
+{"timestamp": "2025-10-06T15:59:11.871129", "level": "INFO", "module": "main", "message": "=== Чат-сервер запущен ===", "name": "root"}
+{"timestamp": "2025-10-06T15:59:11.873131", "level": "INFO", "module": "main", "message": "Сервер запущен на ws://localhost:8765", "name": "root"}
+{"timestamp": "2025-10-06T15:59:11.941611", "level": "INFO", "module": "server", "message": "server listening on 127.0.0.1:8765", "name": "websockets.server"}
+{"timestamp": "2025-10-06T15:59:11.942611", "level": "INFO", "module": "server", "message": "server listening on [::1]:8765", "name": "websockets.server"}
+{"timestamp": "2025-10-06T15:59:15.283648", "level": "INFO", "module": "server", "message": "connection open", "name": "websockets.server"}
+{"timestamp": "2025-10-06T15:59:19.697728", "level": "INFO", "module": "main", "message": "Пользователь 'Аноним' подключился. Всего пользователей: 1", "name": "root"}
+{"timestamp": "2025-10-06T15:59:23.416202", "level": "INFO", "module": "main", "message": "[Аноним] -> кпкп", "name": "root"}
+{"timestamp": "2025-10-06T15:59:34.922574", "level": "INFO", "module": "main", "message": "[Аноним] -> сучара создай json", "name": "root"}
+{"timestamp": "2025-10-06T15:59:39.279178", "level": "INFO", "module": "main", "message": "[Аноним] -> сынок паразитки", "name": "root"}
+{"timestamp": "2025-10-06T16:00:56.958546", "level": "INFO", "module": "server", "message": "connection open", "name": "websockets.server"}
+{"timestamp": "2025-10-06T16:01:00.914879", "level": "INFO", "module": "main", "message": "Пользователь 'Аноним' подключился. Всего пользователей: 1", "name": "root"}
+{"timestamp": "2025-10-06T16:01:04.424767", "level": "INFO", "module": "main", "message": "[Аноним] -> салам", "name": "root"}

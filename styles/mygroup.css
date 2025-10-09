@@ -1,0 +1,71 @@
+body {
+    height: 844px;
+    width: 390px;
+
+}
+.mygroup_screen_header {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    font-family: blogger, sans-serif;
+    gap: 65px;
+    margin-top: 5px;
+}
+.mgrs_title {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    height: 51px;
+    width: 161px;
+    background: #6D28D9;
+    border-radius: 16px;
+    font-size: 20px;
+    color: #fff;
+}
+.mgrs_title_p{
+    margin-left: 26px;
+}
+.mgrs_btn {
+    border-radius: 14px;
+    height: 44px;
+    width: 44px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 1px #909da7;
+    margin-left: 5px;
+}
+.mgrs_searchblock{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 36px;
+    width: 358px;
+    background-color: #A5A5A5;
+    gap: 4px    ;
+    border-radius: 10px;
+    margin-left: 17px;
+    margin-top: 20px;
+}
+.mgrs_searchblock_inputblock {
+    height: 36px;
+    width: 350px;
+    background-color: #A5A5A5;
+    font-size: 16px;
+}
+.mgr_screen_body {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 17px;
+    font-size: 24px;
+    gap: 15px;
+}
+.line {
+    height: 1px;
+    width: 358px;
+    background-color: #909da7;
+    margin: 7px 0 17px 17px;
+    
+}

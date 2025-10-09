@@ -1,0 +1,462 @@
+.body {
+    width: 422; 
+    height: 625;
+}
+
+.first_screen {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    align-items: center;
+    font-family: blogger, sans-serif;
+}
+.fs_h1 {
+    text-align: center;
+    font-size: 24px;
+    opacity: 0; /* Сначала текст невидим */
+    transform: translateY(-100px); /* Сдвигаем текст вверх */
+    animation: fs_h1_jump 1s forwards 2s; 
+}
+@keyframes fs_h1_jump {
+            0% {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+            70% {
+                transform: translateY(5px); /* Немного пружиним вниз */
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0); /* Возвращаем в исходное положение */
+            }
+        }
+.fs_p1 {
+    margin: 20px 18% 0 18%;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0; /* Сначала текст невидим */
+    transform: translateY(-100px); /* Сдвигаем текст вверх */
+    animation: fs_p1_jump 1s forwards 2s; 
+}
+@keyframes fs_p1_jump {
+            0% {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+            70% {
+                transform: translateY(5px); /* Немного пружиним вниз */
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0); /* Возвращаем в исходное положение */
+            }
+        }
+.fs_h2 {
+    margin-top: 5px;
+    font-size: 16px;
+}
+.fs_background_images {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}
+.seconds_background{
+    position: absolute;
+    bottom: 50%;
+    left: 27%;
+    z-index: 2;
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+    animation: fadeInIcon 1s forwards 2s;
+}
+@keyframes fadeInIcon {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.seconds_icon{
+    animation: zoomIn 2s ease-out forwards;
+}
+@keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0.2;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+.fs_button {
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+    background-color: #2F80ED;
+    opacity: 0; /* Кнопка изначально невидима */
+    animation: fadeIn 1s forwards 2s; /* 2с задержка, 1с анимация */
+}
+@keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+.footer {
+    display: flex;
+    justify-content: center;
+    grid-gap: 5px;
+    opacity: 0; /* Сначала текст невидим */
+    transform: translateY(100px); /* Сдвигаем текст вверх */
+    animation: fs_footer_jump 1s forwards 2s; 
+}
+@keyframes fs_footer_jump {
+            0% {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+            70% {
+                transform: translateY(5px); /* Немного пружиним вниз */
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0); /* Возвращаем в исходное положение */
+            }
+        }
+
+
+/*--------------------------------------------------SECOND_SCREEN------------------------------------------------*/
+
+.second_screen {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    align-items: center;
+    font-family: blogger, sans-serif;
+}
+.ss_h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+    opacity: 0;
+    animation: SS_fadeIn 1s forwards 1s; 
+    color: #27AE60;
+}
+.ss_p1 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 0;
+    animation: SS_fadeIn 1s forwards 1s; 
+}
+.ss_background_image{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.Phone1_style{
+    height: 478;
+    width: 234;
+}
+.ss_button{
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: -80px;
+    color: #fff;
+    background-color: #2F80ED;
+    opacity: 0;
+    animation: SS_fadeIn 1s forwards 1s; 
+}
+.ss_footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.ss_skip_btn {
+    opacity: 0;
+    animation: SS_fadeIn 1s forwards 1s;
+    background-color: #fff;
+    font-size: 18px;
+    color: #A5A5A5;
+}
+
+@keyframes SS_fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*--------------------------------------------------THIRD_SCREEN------------------------------------------------*/
+
+.third_screen {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    align-items: center;
+    font-family: blogger, sans-serif;
+}
+.third_screen_h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+    opacity: 0;
+    animation: TS_fadeIn 1s forwards 1s; 
+    color: #2F80ED;
+}
+
+.third_screen_p1 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 0;
+    animation: TS_fadeIn 1s forwards 1s; 
+}
+
+@keyframes TS_fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*--------------------------------------------------FOURTH_SCREEN------------------------------------------------*/
+
+.fourth_screen {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    align-items: center;
+    font-family: blogger, sans-serif;
+}
+.fourth_screen_h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+    opacity: 0;
+    animation: TS_fadeIn 1s forwards 1s; 
+    color: #6D28D9;
+}
+
+.fourth_screen_p1 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 0;
+    animation: TS_fadeIn 1s forwards 1s; 
+}
+
+/*--------------------------------------------------FIFTH_SCREEN------------------------------------------------*/
+
+.fifth_screen {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    align-items: center;
+    font-family: blogger, sans-serif;
+}
+.fifth_screen_h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+    opacity: 0;
+    animation: TS_fadeIn 1s forwards 1s; 
+    color: #000000;
+}
+
+.fifth_screen_p1 {
+    margin: 20px 5% 0 5%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 0;
+    animation: TS_fadeIn 1s forwards 1s; 
+}
+.fifth_screen_icon {
+    height: 150px;
+    width: 150px;
+    margin-top: 80px;
+    opacity: 0;
+    animation: SS_fadeIn 1s forwards 1s; 
+}
+.fifth_screen_h1_2 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 15px;
+    opacity: 0;
+    animation: TS_fadeIn 1s forwards 1s; 
+    color: #000000;
+}
+.fifth_button{
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 60px;
+    color: #fff;
+    background-color: #2F80ED;
+    opacity: 0;
+    animation: SS_fadeIn 1s forwards 1s; 
+}
+/*---------------------------------------------------------------TOOGLE_CONT--------------------------------------------------------------- */
+.toggle-switch {
+    position: relative;
+    margin-top: 30px;
+    width: 60px;
+    height: 34px;
+    background-color: #ccc;
+    border-radius: 34px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    opacity: 0;
+    animation: SS_fadeIn 1s forwards 1s; 
+}
+.toggle-switch::before {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background-color: white;
+    border-radius: 50%;
+    top: 3px;
+    left: 3px;
+    box-shadow: 0 2px 5px #5a4f4f33;
+    transition: transform 0.3s ease;
+}
+.toggle-switch.active {
+    background-color: #2ecc71;
+}
+.toggle-switch.active::before {
+    transform: translateX(26px);
+}
+.toggle-label {
+    margin-top: 10px;
+    color: #95a5a6;
+    font-weight: bold;
+    font-size: 18px;
+    opacity: 0;
+    animation: SS_fadeIn 1s forwards 1s; 
+}
+.toggle-label.off {
+    color: #2ecc71; 
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/*---------------------------------------------------------------SIXTH_SCREEN--------------------------------------------------------------- */
+.sixth_screen {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    align-items: center;
+    font-family: blogger, sans-serif;
+}
+.sixth_screen_h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+    opacity: 0;
+    animation: TS_fadeIn 1s forwards 1s; 
+    color: #000000;
+}
+.sixth_screen_p1 {
+    margin: 20px 5% 0 5%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 20px;
+    opacity: 0;
+    animation: TS_fadeIn 1s forwards 1s;
+}
+.sixth_screen_selector {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    align-items: center;
+    margin-top: 40px;
+    animation: TS_fadeIn 1s forwards 1s; 
+}
+.sixth_screen_selector_btn {
+    margin-top: 15px;
+    height: 50px;
+    width: 300px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #000000;
+    background-color: #ffffff00;
+    border: 1px solid  #2F80ED;
+    transition: background-color 0.3s ease, border-color 0.3s ease
+}
+.sixth_screen_selector_btn.active {
+    background-color: #2F80ED;
+    color: white;
+    border-color: #2F80ED;
+}
+/*---------------------------------------------------------------SEVEN_SCREEN--------------------------------------------------------------- */
+.swiper {
+    margin-top: 40px;
+    position: absolute;
+    left: 15%;
+    height: 400px;
+    width: 400px;
+    animation: SS_fadeIn 1s forwards 1s;
+}
+.seven_screen {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    align-items: center;
+    font-family: blogger, sans-serif;
+}
+.seven_screen_h1 {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-left: 20px;
+    animation: SS_fadeIn 1s forwards 1s;
+}
+.seven_screen_btn {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    align-items: center;
+    font-family: blogger, sans-serif;
+}
+.seven_screen_button_comfirm {
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 20px ;
+    color: #fff;
+    background-color: #2F80ED;
+    opacity: 0;
+    animation: SS_fadeIn 1s forwards 1s;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/supportchat.css">
+</head>
+<body>
+    <header class="supportchat_screen_header">
+        <button class="sprch_btn" onclick="window.location.href='page8.html'"> <img src="../styles/icons/Vector_strelo4ka_back.svg" alt=""> </button>
+        <div class="sprch_chattitle">
+            <p class="sprch_chattitle_p">Психологическая поддержка</p>
+        </div>
+        <button class="sprch_btn"> <img src="../styles/icons/Vector_sound.svg" alt=""> </button>
+    </header>
+    <div class="supportchat_body" id="messages">
+        <div class="message support-message"></div>
+    </div>      
+    <footer class="supportchat_keyboardblock">
+        <div class="supportchat_keyboardblock_wrapper">
+            <button class="supportchat_keyboardblock_btn"> <img src="../styles/icons/Vector_plusik.svg" alt="" > </button>
+            <input type="text" class="supportchat_keyboardblock_input" placeholder=" Опишите свою проблему" id="messageInput">
+            <button class="supportchat_keyboardblock_btn" onclick="sendMessage()"> <img src="../styles/icons/Vector_strelo4ka_send.svg" alt="" > </button>
+        </div>
+        
+    </footer>
+    <script src="../backend/main.js"></script>
+</body>
+</html>

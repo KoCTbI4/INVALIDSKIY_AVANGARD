@@ -1,0 +1,163 @@
+#body {
+    height: 844px;
+    width: 390px;
+}
+.menu_screen_header {
+    margin: 20px 10px 0px 25px;
+    display: flex;
+
+}
+.menu_screen_header_icon{
+    width: 44px;
+    height: 44px;
+    
+}
+.menu_screen_header_h1{
+    margin-left: 15px;
+    padding-top: 2%;
+    font-size: 24px;
+}
+.menu_screen_notification_btn {
+    background-color: aliceblue;
+    margin-left: 30%;
+    border-radius: 14px;
+    height: 44px;
+    width: 44px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 1px #909da7;
+}
+.menu_screen_menu {
+    margin-left: 25px;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column wrap;
+}
+.menu_screen_menu_h1{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.menu_screen_menu_psychobtn {
+    height: 152px;
+    width: 358px;
+    border-radius: 24px;
+    background-color: #27AE60;
+}
+.psychobtn_p {
+    position: absolute;
+    text-align: left;
+    margin: 17px 0 0px 21px;
+    font-size: 24px;
+    color: #fff;
+}
+.menu_screen_menu_mygroupsbtn{
+    margin-top: 10px;
+    height: 152px;
+    width: 358px;
+    border-radius: 24px;
+    background-color: #6D28D9;
+}
+.mygroupsbtn_p {
+    position: absolute;
+    text-align: left;
+    margin: 17px 0 0px 21px;
+    font-size: 24px;
+    color: #fff;
+}
+.mgrbtn_shtu4kipng {
+    margin-top: 57px;
+    margin-left: 139px;
+    border-radius: 0px 0px 22px 0px;
+}
+.menu_screen_menu_historybtn {
+    margin-top: 10px;
+    height: 152px;
+    width: 358px;
+    border-radius: 24px;
+    background-color: #FB923C; 
+}
+.historybtn_p {
+    position: absolute;
+    text-align: left;
+    margin: 17px 0 0px 21px;
+    font-size: 24px;
+    color: #fff;
+}
+.mgrbtn_hstrbtnboopng {
+    margin-top: 50px;
+    margin-left: 180px;
+    
+}
+.menu_screen_menu_yourdevices {
+    margin-top: 10px;
+    height: 152px;
+    width: 358px;
+    border-radius: 24px;
+    background-color: #FACC15;
+}
+.yourdevicesbtn_p {
+    position: absolute;
+    text-align: left;
+    margin: 17px 0 0px 21px;
+    font-size: 24px;
+    color: #fff;
+}
+.yrdvsbtn_cubikpng {
+    margin-top: 43px;
+    margin-left: 233px;
+    border-radius: 0px 0px 22px 0px;
+}
+
+.menu_screen_menu_footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 76px;
+    width: 346px;
+    border-radius: 24px;
+    background-color: #F0F0F0;
+    margin-left: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Добавим немного расстояния между кнопками */
+}
+
+.msmf_UIbtn1 {
+    order: 0; /* Центр */
+    height: 64px;
+    width: 64px;
+    margin-bottom: 10px;
+    border-radius: 24px;
+}
+
+.msmf_UIbtn2 {
+    order: -2; /* Слева */
+    height: 44px;
+    width: 44px;
+    margin-bottom: 10px;
+    border-radius: 24px;
+}
+
+.msmf_UIbtn3 {
+    order: -1; /* Слева */
+    height: 44px;
+    width: 44px;
+    margin-bottom: 10px;
+    border-radius: 24px;
+}
+
+.msmf_UIbtn4 {
+    order: 1; /* Справа */
+    height: 44px;
+    width: 44px;
+    margin-bottom: 10px;
+    border-radius: 24px;
+}
+
+.msmf_UIbtn5 {
+    order: 2; /* Справа */
+    height: 44px;
+    width: 44px;
+    margin-bottom: 10px;
+    border-radius: 24px;
+}

@@ -1,0 +1,16 @@
+2025-10-06 15:53:18,012 [INFO] root: === Чат-сервер запущен ===
+2025-10-06 15:53:18,013 [INFO] root: Сервер запущен на ws://localhost:8765
+2025-10-06 15:53:18,084 [INFO] websockets.server: server listening on 127.0.0.1:8765
+2025-10-06 15:53:18,085 [INFO] websockets.server: server listening on [::1]:8765
+2025-10-06 15:53:26,444 [INFO] websockets.server: connection open
+2025-10-06 15:53:30,026 [INFO] root: Пользователь 'Аноним' подключился. Всего пользователей: 1
+2025-10-06 15:53:36,234 [INFO] root: [Аноним] -> писька
+2025-10-06 15:56:29,738 [INFO] root: === Чат-сервер запущен ===
+2025-10-06 15:56:29,739 [INFO] root: Сервер чата запущен на ws://localhost:8765
+2025-10-06 15:56:29,739 [INFO] root: Интерфейс логов: http://localhost:3000/logs
+2025-10-06 15:56:29,834 [INFO] websockets.server: server listening on [::1]:8765
+2025-10-06 15:56:29,835 [INFO] websockets.server: server listening on 127.0.0.1:8765
+2025-10-06 15:56:52,717 [INFO] websockets.server: connection open
+2025-10-06 15:56:58,812 [INFO] root: Пользователь 'Аноним' подключился. Всего пользователей: 1
+2025-10-06 15:57:02,300 [INFO] root: [Аноним] -> писка
+2025-10-06 15:57:32,478 [INFO] root: [Аноним] -> че за хуй на моем рабочем месте?
