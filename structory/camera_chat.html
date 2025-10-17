@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИИ ассистент</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/camera-chat.css">
+</head>
+<body>
+    <header class="mygroup_screen_header">
+        <button class="mgrs_btn" onclick="window.location.href='page8.html'"> 
+            <img src="../styles/icons/Vector_strelo4ka_back.svg" alt=""> 
+        </button>
+        <div class="mgrs_title">
+            <p class="mgrs_title_p">ИИ ассистент</p>
+        </div>
+        <button class="mgrs_btn"> 
+            <img src="../styles/icons/Vector_sound.svg" alt=""> 
+        </button>
+    </header>
+
+    <!-- Тело чата -->
+    <div class="chat-container">
+        <div id="chat" class="chat">
+            <div class="message bot">Загрузите изображение, чтобы начать общение.</div>
+        </div>
+    </div>
+
+    <div class="image-preview-container">
+              <div id="imagePreview" class="image-preview"></div>
+     </div>
+    <footer class="supportchat_keyboardblock">
+        <div class="supportchat_keyboardblock_wrapper">
+            <button class="supportchat_keyboardblock_btn" onclick="document.getElementById('imageUpload').click()"> 
+                <img src="../styles/icons/Vector_plusik.svg" alt="" > 
+            </button>
+            <input type="text" class="supportchat_keyboardblock_input" placeholder=" Введите свое сообщение" id="messageInput">
+            <button class="supportchat_keyboardblock_btn" onclick="sendMessage()"> 
+                <img src="../styles/icons/Vector_strelo4ka_send.svg" alt="" > 
+            </button>
+        </div>
+        
+        <!-- Скрытый input для загрузки изображения -->
+        <input type="file" id="imageUpload" accept="image/*" capture="environment" style="display: none;" />
+    </footer>
+
+    <script src="../backend/camera-chat.js"></script>
+</body>
+</html>

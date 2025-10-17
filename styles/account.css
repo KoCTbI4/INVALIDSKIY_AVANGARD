@@ -1,4 +1,148 @@
 body {
     height: 844px;
     width: 390px;
+    background-color: #2F80ED;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+.acc_scrn_header_btn{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 280px;
+    padding-left: 6px;
+    margin-bottom: 100px;
+    width: 100%;
+    
+}
+.ac_scrn_hdr_btns{
+    border-radius: 14px;
+    height: 44px;
+    width: 44px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 1px #909da7;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+.avatarPreview_box{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -80px;
+    height: 70px;
+}
+.avatar-preview{
+    height: 120px;
+    width: 120px;
+    border-radius: 70px;
+    z-index: 1;
+}
+.account_container{
+    margin-top: 10px;
+    margin-left: 5px;
+    height: 700px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px 25px 0 0;
+}
+.text_fields{
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.account_container_p_name{
+    margin-top: 20px;
+    position: absolute;
+    text-align: center;
+    padding-top: 3px;
+    width: 350px;
+    height: 35px;
+    top: 200px;
+    left: 23px;
+    font-size: 24px;
+    
+}
+.account_container_p_diagnoz_label{
+    margin-top: 40px;
+    position: absolute;
+    top: 250px;
+    left: 23px;  
+    font-size: 16px;
+}
+.account_container_p_diagnoz{
+    position: absolute;
+    top: 270px;
+    left: 23px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 24px;
+    padding-top: 3px;
+    width: 350px;
+    height: 40px;
+    border: 1px solid #A5A5A5;
+    border-radius: 12px;
+}
+.account_container_p_numberphone_label{
+    position: absolute;
+    top: 320px;
+    left: 23px;  
+    margin-top: 70px;
+    font-size: 16px;
+}
+.account_container_p_numberphone{
+    position: absolute;
+    top: 340px;
+    left: 23px;
+    margin-top: 70px;
+    text-align: center;
+    font-size: 24px;
+    color: #2F80ED;
+    padding-top: 7px;
+    width: 350px;
+    height: 40px;
+    border: 1px solid #2F80ED;
+    border-radius: 12px;
+}
+.account_container_p_Email_label{
+    position: absolute;
+    top: 395px;
+    left: 23px;  
+    margin-top: 90px;
+    font-size: 16px; 
+}
+.account_container_p_Email{
+    position: absolute;
+    top: 420px;
+    left: 23px;
+    margin-top: 90px;
+    text-align: center;
+    font-size: 24px;
+    color: #2F80ED;
+    padding-top: 7px;
+    width: 350px;
+    height: 40px;
+    border: 1px solid #2F80ED;
+    border-radius: 12px;
+}
+.account_container_p_adres_label{
+    position: absolute;
+    top: 470px;
+    left: 23px;  
+    margin-top: 110px;
+    font-size: 16px; 
+}
+.account_container_p_adres{
+    position: absolute;
+    top: 495px;
+    left: 23px;
+    margin-top: 110px;
+    text-align: center;
+    font-size: 24px;
+    padding-top: 3px;
+    width: 350px;
+    height: 40px;
+    border: 1px solid #A5A5A5;
+    border-radius: 12px;
 }

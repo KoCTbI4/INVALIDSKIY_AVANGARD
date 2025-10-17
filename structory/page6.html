@@ -8,17 +8,19 @@
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-    
     <div class="sixth_screen">
         <h1 class="sixth_screen_h1">Расскажите о себе:</h1>
-        <p class="sixth_screen_p1">Как вы общаетесь, текстом, жестами или голосом?</p>
+        <p class="sixth_screen_p1"> Как вы общаетесь, текстом, жестами или голосом?</p>
         <div class="sixth_screen_selector">
-            <button class="sixth_screen_selector_btn" id="Six_Scr_sb_1">Текстом</button>
-            <button class="sixth_screen_selector_btn" id="Six_Scr_sb_2">Жестами</button>
-            <button class="sixth_screen_selector_btn" id="Six_Scr_sb_3">Голосом</button>
+            <button class="sixth_screen_selector_btn" id="Six_Scr_sb_1" data-method="text">Текстом</button>
+            <button class="sixth_screen_selector_btn" id="Six_Scr_sb_2" data-method="gestures">Жестами</button>
+            <button class="sixth_screen_selector_btn" id="Six_Scr_sb_3" data-method="voice">Голосом</button>
         </div>
-        <button class="fifth_button" onclick="window.location.href='page7.html'">Далее</button>
+        
     </div>
+    <footer class="ss_footer">
+        <button class="fifth_button" id="next-btn">Далее</button>
+    </footer>
     <script src="../backend/main.js"></script>
 </body>
 </html>

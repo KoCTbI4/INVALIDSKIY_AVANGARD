@@ -11,24 +11,21 @@
 <body>
     <div class="first_screen">
 
-        <h1 class="fs_h1">Добро пожаловать <br> в Voco!</h1>
+        <h1 class="fs_h1">Добро пожаловать <br> в Воко!</h1>
         <p class="fs_p1">Наше приложение помогает людям с ОВЗ и пенсионерам в общении, ориентировании и поддержке в повседневной жизни.</p>
         <div class="fs_background_images">
-            <img src="../styles/images/ллооггоо.png" alt="" class="seconds_background">
-            <img src="../styles/images/cloud 1.png" alt="" class="seconds_icon">
+            <img src="../styles/icons/vectorlog.svg" alt="" class="seconds_background">
+            <img src="../styles/images/cloud 1 (1).png" alt="" class="seconds_icon">
         </div>
-        <button class="fs_button" onclick="window.location.href='str2.html'">Далее</button>
+        
         <div class="footer"> 
-            <h1 class="fs_h2">Сделано компанией</h1> 
-            <img src="../styles/icons/Group.svg" alt="">
+            <button class="fs_button" onclick="window.location.href='str2.html'">Далее</button>
+            <h1 class="fs_h2">Сделано компанией <img src="../styles/icons/Group.svg" alt="" class="fs_img3534"></h1> 
         </div>
         
         
     </div>
-    <script>
-        const initData = window.Telegram.WebApp.initData;
-        fetch('http://localhost:8001/api/account?initData=' + encodeURIComponent(initData))
-    </script>
+
 </body>
 </html>
 

@@ -1,19 +1,18 @@
-.body {
-    width: 422; 
-    height: 625;
+body {
+    height: 844px;
+    width: 390px;
 }
 
 .first_screen {
-    font-family: 'Times New Roman', Times, serif;
     display: flex;
     flex-flow: column wrap;
     justify-items: center;
     align-items: center;
-    font-family: blogger, sans-serif;
 }
 .fs_h1 {
     text-align: center;
     font-size: 24px;
+    margin-top: 100px;
     opacity: 0; /* Сначала текст невидим */
     transform: translateY(-100px); /* Сдвигаем текст вверх */
     animation: fs_h1_jump 1s forwards 2s; 
@@ -32,8 +31,8 @@
             }
         }
 .fs_p1 {
-    margin: 20px 18% 0 18%;
-    font-size: 14px;
+    margin: 30px 7% 0 7%;
+    font-size: 16px;
     text-align: center;
     opacity: 0; /* Сначала текст невидим */
     transform: translateY(-100px); /* Сдвигаем текст вверх */
@@ -53,8 +52,12 @@
             }
         }
 .fs_h2 {
-    margin-top: 5px;
+    margin-top: 0;
     font-size: 16px;
+}
+.fs_img3534{
+    margin-top: -5px;
+    margin-bottom: 13px;
 }
 .fs_background_images {
     display: flex;
@@ -64,11 +67,11 @@
 }
 .seconds_background{
     position: absolute;
-    bottom: 50%;
-    left: 27%;
+    bottom: 65%;
+    left: 35%;
     z-index: 2;
-    width: 200px;
-    height: 200px;
+    width: 116px;
+    height: 116px;
     opacity: 0;
     animation: fadeInIcon 1s forwards 2s;
 }
@@ -81,6 +84,7 @@
     }
 }
 .seconds_icon{
+    margin-top: 120px;
     animation: zoomIn 2s ease-out forwards;
 }
 @keyframes zoomIn {
@@ -98,7 +102,7 @@
     height: 50px;
     font-size: 20px;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     color: #fff;
     background-color: #2F80ED;
     opacity: 0; /* Кнопка изначально невидима */
@@ -114,6 +118,11 @@
         }
 .footer {
     display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
     justify-content: center;
     grid-gap: 5px;
     opacity: 0; /* Сначала текст невидим */
@@ -138,23 +147,22 @@
 /*--------------------------------------------------SECOND_SCREEN------------------------------------------------*/
 
 .second_screen {
-    font-family: 'Times New Roman', Times, serif;
     display: flex;
     flex-flow: column wrap;
     justify-items: center;
     align-items: center;
-    font-family: blogger, sans-serif;
+    gap: 30px;
 }
 .ss_h1 {
     text-align: center;
     font-size: 24px;
-    margin-top: 10px;
+    margin-top: 100px;
     opacity: 0;
     animation: SS_fadeIn 1s forwards 1s; 
-    color: #27AE60;
+    color: #6D28D9;
 }
 .ss_p1 {
-    margin-top: 20px;
+    margin-top: 0px;
     text-align: center;
     font-size: 16px;
     line-height: 20px;
@@ -162,11 +170,12 @@
     animation: SS_fadeIn 1s forwards 1s; 
 }
 .ss_background_image{
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
+    position: fixed;
+    left: 20%;
+    top: 32%;
+    margin-top: 0px;
+    opacity: 0;
+    animation: SS_fadeIn 1s forwards 1.1s; 
 }
 .Phone1_style{
     height: 478;
@@ -177,7 +186,6 @@
     height: 50px;
     font-size: 20px;
     border-radius: 10px;
-    margin-top: -80px;
     color: #fff;
     background-color: #2F80ED;
     opacity: 0;
@@ -185,15 +193,21 @@
 }
 .ss_footer{
     display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-items: center;
     align-items: center;
-    justify-content: center;
-    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    bottom: 0;
+    margin-top: 0px;
 }
 .ss_skip_btn {
     opacity: 0;
     animation: SS_fadeIn 1s forwards 1s;
     background-color: #fff;
     font-size: 18px;
+    margin-top: 30px;
     color: #A5A5A5;
 }
 
@@ -209,24 +223,22 @@
 /*--------------------------------------------------THIRD_SCREEN------------------------------------------------*/
 
 .third_screen {
-    font-family: 'Times New Roman', Times, serif;
     display: flex;
     flex-flow: column wrap;
     justify-items: center;
     align-items: center;
-    font-family: blogger, sans-serif;
 }
 .third_screen_h1 {
     text-align: center;
     font-size: 24px;
-    margin-top: 10px;
+    margin-top: 100px;
     opacity: 0;
     animation: TS_fadeIn 1s forwards 1s; 
     color: #2F80ED;
 }
 
 .third_screen_p1 {
-    margin-top: 20px;
+    margin-top: 30px;
     text-align: center;
     font-size: 16px;
     line-height: 20px;
@@ -246,24 +258,24 @@
 /*--------------------------------------------------FOURTH_SCREEN------------------------------------------------*/
 
 .fourth_screen {
-    font-family: 'Times New Roman', Times, serif;
     display: flex;
     flex-flow: column wrap;
     justify-items: center;
     align-items: center;
-    font-family: blogger, sans-serif;
 }
 .fourth_screen_h1 {
     text-align: center;
     font-size: 24px;
-    margin-top: 10px;
+    margin-top: 100px;
     opacity: 0;
     animation: TS_fadeIn 1s forwards 1s; 
-    color: #6D28D9;
+    color: #27AE60;
 }
 
 .fourth_screen_p1 {
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
     text-align: center;
     font-size: 16px;
     line-height: 20px;
@@ -274,17 +286,15 @@
 /*--------------------------------------------------FIFTH_SCREEN------------------------------------------------*/
 
 .fifth_screen {
-    font-family: 'Times New Roman', Times, serif;
     display: flex;
     flex-flow: column wrap;
     justify-items: center;
     align-items: center;
-    font-family: blogger, sans-serif;
 }
 .fifth_screen_h1 {
     text-align: center;
     font-size: 24px;
-    margin-top: 10px;
+    margin-top: 100px;
     opacity: 0;
     animation: TS_fadeIn 1s forwards 1s; 
     color: #000000;
@@ -327,7 +337,7 @@
 /*---------------------------------------------------------------TOOGLE_CONT--------------------------------------------------------------- */
 .toggle-switch {
     position: relative;
-    margin-top: 30px;
+    margin-top: 40px;
     width: 60px;
     height: 34px;
     background-color: #ccc;
@@ -369,17 +379,15 @@
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /*---------------------------------------------------------------SIXTH_SCREEN--------------------------------------------------------------- */
 .sixth_screen {
-    font-family: 'Times New Roman', Times, serif;
     display: flex;
     flex-flow: column wrap;
     justify-items: center;
     align-items: center;
-    font-family: blogger, sans-serif;
 }
 .sixth_screen_h1 {
     text-align: center;
     font-size: 24px;
-    margin-top: 20px;
+    margin-top: 100px;
     opacity: 0;
     animation: TS_fadeIn 1s forwards 1s; 
     color: #000000;
@@ -393,16 +401,15 @@
     animation: TS_fadeIn 1s forwards 1s;
 }
 .sixth_screen_selector {
-    font-family: 'Times New Roman', Times, serif;
     display: flex;
     flex-flow: column wrap;
     justify-items: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 60px;
     animation: TS_fadeIn 1s forwards 1s; 
 }
 .sixth_screen_selector_btn {
-    margin-top: 15px;
+    margin-top: 20px;
     height: 50px;
     width: 300px;
     border-radius: 20px;
@@ -410,6 +417,8 @@
     color: #000000;
     background-color: #ffffff00;
     border: 1px solid  #2F80ED;
+    opacity: 0;
+    animation: TS_fadeIn 1s forwards 1s; 
     transition: background-color 0.3s ease, border-color 0.3s ease
 }
 .sixth_screen_selector_btn.active {
@@ -421,32 +430,28 @@
 .swiper {
     margin-top: 40px;
     position: absolute;
-    left: 15%;
+    left: 13%;
     height: 400px;
     width: 400px;
     animation: SS_fadeIn 1s forwards 1s;
 }
 .seven_screen {
-    font-family: 'Times New Roman', Times, serif;
     display: flex;
     flex-flow: column wrap;
     justify-items: center;
     align-items: center;
-    font-family: blogger, sans-serif;
 }
 .seven_screen_h1 {
     font-size: 24px;
-    margin-top: 40px;
+    margin-top: 100px;
     margin-left: 20px;
     animation: SS_fadeIn 1s forwards 1s;
 }
 .seven_screen_btn {
-    font-family: 'Times New Roman', Times, serif;
     display: flex;
     flex-flow: column wrap;
     justify-items: center;
     align-items: center;
-    font-family: blogger, sans-serif;
 }
 .seven_screen_button_comfirm {
     width: 300px;
@@ -454,7 +459,60 @@
     font-size: 20px;
     border-radius: 10px;
     margin-top: 50px;
-    margin-left: 20px ;
+    margin-left: 30px ;
+    color: #fff;
+    background-color: #2F80ED;
+    opacity: 0;
+    animation: SS_fadeIn 1s forwards 1s;
+}
+
+/*---------------------------------------------------------------INPUT_USER_DATA--------------------------------------------------------------- */
+.input_user_data_h1{
+    padding-top: 100px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 24px;
+    animation: SS_fadeIn 1s forwards 1s;
+}
+
+.input_user_data{
+    display: flex;
+    flex-flow: column wrap;
+    font-family: blogger, sans-serif;
+    font-size: 16px;
+    margin-left: 20px;
+    animation: SS_fadeIn 1s forwards 1s;
+    
+}
+.userDetailsForm{
+    display: flex;
+    flex-flow: column wrap;
+    font-family: blogger, sans-serif;
+    margin-top: 50px;
+    gap: 30px   ;
+}
+::placeholder {
+    font-size: 16px;
+    text-align: center;
+    
+}
+
+.inp_ud_input_field{
+    margin-top: 5px;
+    height: 40px;
+    width: 307px;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+.iud_submit_btn {
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-left: 30px ;
     color: #fff;
     background-color: #2F80ED;
     opacity: 0;

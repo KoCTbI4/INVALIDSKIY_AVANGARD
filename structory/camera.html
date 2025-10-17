@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Умная камера</title>
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/camera.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Умная камера</h1>
+    
+    <div id="preview" class="preview_wrap"></div>
+
+    <div id="chat" class="chat">
+      <div class="message bot">Загрузите изображение, чтобы я его описал.</div>
+    </div>
+
+    <footer class="smart_camera_footer">
+      <div class="smcf_firstfloor">
+        <input type="file" id="imageUpload" accept="image/*" capture="environment" style="display: none;" />
+        <!-- Показываем кнопку, которая кликает на скрытый input -->
+        <button class="camera-button" onclick="document.getElementById('imageUpload').click()">Сфотографировать</button>
+
+        <button class="camera_button_chatik"><img src="../styles/icons/Vector_chatik.svg" alt=""></button>
+      </div>
+      <div class="smcf_secondfloor">
+        <button class="msmf_UIbtn1" onclick="window.location.href='camera.html'">
+          <img src="../styles/icons/UI buttons1.svg" alt="">
+        </button>
+        <button class="msmf_UIbtn2">
+          <img src="../styles/icons/UI buttons 2.svg" alt="">
+        </button>
+        <button class="msmf_UIbtn3">
+          <img src="../styles/icons/UI buttons 3.svg" alt="">
+        </button>
+        <button class="msmf_UIbtn4">
+          <img src="../styles/icons/UI buttons 4.svg" alt="">
+        </button>
+        <button class="msmf_UIbtn5" onclick="window.location.href='Settings.html'">
+          <img src="../styles/icons/UI buttons 5.svg" alt="">
+        </button>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../backend/camera.js"></script>
+</body>
+</html>

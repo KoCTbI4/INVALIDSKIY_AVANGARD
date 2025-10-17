@@ -27,9 +27,10 @@ def init_db():
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             telegram_id INTEGER UNIQUE NOT NULL,
             first_name TEXT,
-            last_name TEXT,
+            Email TEXT,
             username TEXT,
             phone_number TEXT,
+            Diagnoz TEXT,
             photo_url TEXT,
             created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
             updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
@@ -77,10 +78,11 @@ async def save_account(request: Request):
 
     user_info = json.loads(user_data["user"])
     telegram_id = int(user_info["id"])
-    first_name = user_info.get("first_name", "")
-    last_name = user_info.get("last_name", "")
+    FullName = user_info.get("FullName", "")
+    Email = user_info.get("Email", "")
     username = user_info.get("username", "")
     photo_url = user_info.get("photo_url", "")
+    Diagnoz = user_info.get("Diagnoz", "")
 
     # Сохраняем/обновляем в БД
     conn = get_db()
@@ -88,10 +90,10 @@ async def save_account(request: Request):
     
     cursor.execute("""
         INSERT OR REPLACE INTO users (
-            telegram_id, first_name, last_name, username, phone_number, photo_url, updated_at
+            telegram_id, FullName, Email, username, Diagnoz, phone_number, photo_url, updated_at
         ) VALUES (?, ?, ?, ?, ?, ?, ?)
     """, (
-        telegram_id, first_name, last_name, username, phone_number, photo_url, datetime.now()
+        telegram_id, FullName, Email, Diagnoz, username, phone_number, photo_url, datetime.now()
     ))
     
     conn.commit()
@@ -125,11 +127,12 @@ async def get_account(request: Request):
 
     return {
         "telegram_id": user["telegram_id"],
-        "first_name": user["first_name"],
-        "last_name": user["last_name"],
+        "FullName": user["FullName"],
+        "Email": user["Email"],
         "username": user["username"],
         "phone_number": user["phone_number"],
-        "photo_url": user["photo_url"]
+        "photo_url": user["photo_url"],
+        "Diagnoz": user["Diagnoz"]
     }
 
 if __name__ == "__main__":

@@ -1,16 +1,14 @@
-#body {
+body {
     height: 844px;
     width: 390px;
 }
 .menu_screen_header {
-    margin: 20px 10px 0px 25px;
+    margin: 20px 7px 0px 10px;
     display: flex;
-
 }
 .menu_screen_header_icon{
     width: 44px;
     height: 44px;
-    
 }
 .menu_screen_header_h1{
     margin-left: 15px;
