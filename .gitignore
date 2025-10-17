@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.vscode/
+.idea/
+# Если у тебя есть локальные логи
+*.log
+chat_logs.json
+venv/
