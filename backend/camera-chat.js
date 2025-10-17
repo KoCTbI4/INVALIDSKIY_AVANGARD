@@ -35,7 +35,7 @@ function sendMessage() {
   formData.append('session_id', currentSessionId);
   formData.append('question', message);
 
-  fetch('http://localhost:7508/api/ask', {
+  fetch('https://noncontinuably-meatier-ardella.ngrok-free.dev/api/ask', {
     method: 'POST',
     body: formData,
   })
@@ -64,7 +64,7 @@ function startSession() {
   const formData = new FormData();
   formData.append('image', currentImageFile);
 
-  fetch('http://localhost:7508/api/start_chat', {
+  fetch('https://noncontinuably-meatier-ardella.ngrok-free.dev/api/start_chat', {
     method: 'POST',
     body: formData,
   })

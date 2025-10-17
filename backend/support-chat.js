@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Подключение к WebSocket-серверу
-    const ws = new WebSocket("ws://localhost:7508");
+    const ws = new WebSocket("https://noncontinuably-meatier-ardella.ngrok-free.dev");
 
     // Попробуем получить элементы. Если их нет, getElementById вернёт null.
     const messagesContainer = document.getElementById('messages');
