@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAIN MENU</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style2.css">
+</head>
+<body>
+    <header class="menu_screen_header">
+       <img src="../styles/images/photo_clienta.png" alt="" class="menu_screen_header_icon" onclick="window.location.href='accaount.html'">
+       <h1 class="menu_screen_header_h1">Привет, <span id="displayFullName"></h1>
+       <button class="menu_screen_notification_btn" onclick="window.location.href='uvedomleniya.html'" ><img src="../styles/icons/bell_vector.svg" alt=""></button>
+    </header>
+    <div class="menu_screen_menu">
+        <h1 class="menu_screen_menu_h1">Категории</h1>
+        <button class="menu_screen_menu_psychobtn" onclick="window.location.href='psychosuppot.html'"> <p class="psychobtn_p">Психологическая <br>поддержка</p> <img src="../styles/images/krujok.png" alt=""></button>
+        <button class="menu_screen_menu_mygroupsbtn" onclick="window.location.href='mygroup.html'"> <p class="mygroupsbtn_p">Мои группы</p> <img src="../styles/images/shtu4ki.png" alt="" class="mgrbtn_shtu4kipng"></button>
+        <button class="menu_screen_menu_historybtn" onclick="window.location.href='history.html'"> <p class="historybtn_p">История запросов</p> <img src="../styles/images/книга.png" alt="" class="mgrbtn_hstrbtnboopng"></button>
+        <button class="menu_screen_menu_yourdevices"> <p class="yourdevicesbtn_p">Ваши устройства</p> <img src="../styles/images/cubik.png" alt="" class="yrdvsbtn_cubikpng"></button>
+    </div>
+    <footer class="menu_screen_menu_footer">
+        <button class="msmf_UIbtn1" onclick="window.location.href='camera.html'"><img src="../styles/icons/UI buttons1.svg" alt="" ></button>
+        <button class="msmf_UIbtn2"><img src="../styles/icons/UI buttons 2.svg" alt=""></button>
+        <button class="msmf_UIbtn3"><img src="../styles/icons/UI buttons 3.svg" alt=""></button>
+        <button class="msmf_UIbtn4"><img src="../styles/icons/UI buttons 4.svg" alt=""></button>
+        <button class="msmf_UIbtn5" onclick="window.location.href='Settings.html'"><img src="../styles/icons/UI buttons 5.svg" alt=""></button>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const userData = JSON.parse(localStorage.getItem('userData'));
+
+            if (userData) {
+                document.getElementById('displayFullName').textContent = userData.FullName;
+            } else {
+                console.log("Данные пользователя не найдены");
+            }
+        });
+    </script>
+</body>
+</html>

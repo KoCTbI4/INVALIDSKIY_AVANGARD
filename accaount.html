@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/account.css">
+</head>
+<body>
+    
+    <header class="acc_scrn_header_btn">
+        <button class="ac_scrn_hdr_btns" onclick="window.location.href='page8.html'"><img src="../styles/icons/Vector_strelo4ka_back.svg" alt=""></button>
+        <button class="ac_scrn_hdr_btns" onclick="window.location.href=''"><img src="../styles/icons/Karandashik_Vector.svg" alt=""></button>
+    </header>
+
+    <div class="avatarPreview_box"> <img id="avatarPreview" class="avatar-preview" src="../styles/images/барецкий.jpg" alt="Аватар"> </div> <!-- должно подтягиваться фото с тг, но пока стоит затычка-->
+
+    <div class="account_container" >
+        <div class="text_fields" id="accountPage">
+            <p class="account_container_p_name"> <strong>Привет, я</strong> <span id="displayFullName"></span>! </p> <!--Строка с именем-->
+
+            <span class="account_container_p_diagnoz_label">Диагноз</span> <br> <!--   Подпись диагноза     -->
+            <p class="account_container_p_diagnoz"> <span id="displaydiagnosis"></span> </p>  <!--      label диагноза    СДЕЛАТЬ!!!-->
+
+            <span class="account_container_p_numberphone_label">Номер телефона</span> <br>
+            <p class="account_container_p_numberphone"> <span id="displayphone_number"></span> </p>
+
+            <span class="account_container_p_Email_label">Email:</span>
+            <p class="account_container_p_Email"> <span id="displayEmail"></span> </p>
+
+            <span class="account_container_p_adres_label">Адрес проживания</span>
+            <p class="account_container_p_adres"> <span id=" "></span> </p>
+        </div>
+        
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            try {
+                // Получаем данные из localStorage
+                const userData = JSON.parse(localStorage.getItem('userData'));
+                const userDiagnosis = JSON.parse(localStorage.getItem('userDiagnosis'));
+
+                // Проверяем, что данные существуют
+                if (userData && userDiagnosis) {
+                    // Заполняем поля на странице
+                    document.getElementById('displayFullName').textContent = userData.FullName || 'Не указано';
+                    document.getElementById('displaydiagnosis').textContent = userDiagnosis.diagnosis || 'Не определён';
+                    document.getElementById('displayphone_number').textContent = userData.phone_number || 'Не указано';
+                    document.getElementById('displayEmail').textContent = userData.Email || 'Не указано';
+                } else {
+                    console.log("Данные пользователя не найдены");
+                }
+            } catch (error) {
+                console.error("Ошибка при загрузке данных:", error);
+            }
+        });
+    </script>
+
+</body>
+</html>

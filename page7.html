@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> <!-- Подключение основного скрипта Swiper, который отвечает за функциональность слайдера -->
+</head>
+<body>
+    <div class="seven_screen">
+        <h1 class="seven_screen_h1">Выбрать мой голос:</h1>   
+        
+    </div>
+    <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../styles/images/old_chest.png"></div>
+                <div class="swiper-slide"><img src="../styles/images/money.png"></div>
+                <div class="swiper-slide"><img src="../styles/images/stranger_cheel.png"></div>
+            </div> 
+    </div>
+    <script>
+        new Swiper('.swiper', {
+        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+        loop: true
+        });
+    </script>
+    <div class="seven_screen_btn">
+        
+    </div>
+    <footer class="ss_footer">
+        <button class="seven_screen_button_comfirm" onclick="window.location.href='page8.html'">Выбрать и сохранить</button>
+    </footer>
+
+</body>
+</html>

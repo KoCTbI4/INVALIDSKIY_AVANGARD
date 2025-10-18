@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <div class="input_user_data_h1">
+        <h1 >Ваше имя:</h1>
+    </div>
+    <div class="input_user_data">
+        <form id="userDetailsForm" class="userDetailsForm">
+            <div>
+                <label for="FullName">Ваше ФИО:</label><br>
+                <input type="text" id="FullName" placeholder="Макс" required class="inp_ud_input_field"> 
+            </div>
+            <div>
+                <label for="phone_number">Номер телефона:</label><br>
+                <input type="tel" id="phone_number" placeholder="+7 (000) 555-00-55" required class="inp_ud_input_field"> 
+            </div>
+            <div>
+                <label for="Email">Email:</label><br>
+                <input type="email" id="Email" placeholder="Viktor@gmail.com" required class="inp_ud_input_field"> 
+            </div>
+            
+        </form>
+    </div>
+    <footer class="ss_footer">
+        <button type="submit" class="iud_submit_btn" onclick="window.location.href='page7.html'">Сохранить</button>
+    </footer>
+    
+    <script>
+        document.getElementById('userDetailsForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const FullName = document.getElementById('FullName').value;
+            const phone_number = document.getElementById('phone_number').value;
+            const Email = document.getElementById('Email').value;
+
+            // Сохраняем в localStorage
+            localStorage.setItem('userData', JSON.stringify({ FullName, phone_number, Email }));
+            localStorage.setItem('onboarded', 'true');
+
+            // Переход на страницу аккаунта
+            window.location.href = 'page7.html';
+        });
+    </script>
+</body>
+</html>
